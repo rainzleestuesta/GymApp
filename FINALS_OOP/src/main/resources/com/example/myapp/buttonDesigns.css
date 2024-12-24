@@ -1,0 +1,5 @@
+.exercisesBtn:hover{
+    -fx-background-color: linear-gradient(to bottom right,#f8ae5e,#ff9621 );
+    -fx-cursor: hand;
+
+}

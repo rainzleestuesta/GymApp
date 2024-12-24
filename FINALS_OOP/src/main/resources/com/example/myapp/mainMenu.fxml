@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="600.0" minWidth="340.0" prefHeight="600.0" prefWidth="340.0" styleClass="gradient" stylesheets="@backgroundDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myapp.MainController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TabPane fx:id="mainTabPane" prefHeight="600.0" prefWidth="340.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="profileTab" text="">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Accordion fx:id="MilestoneAccordion" layoutX="36.0" layoutY="228.0" prefHeight="329.0" prefWidth="268.0" styleClass="exercisesBtn">
+                                 <panes>
+                                    <TitledPane fx:id="milestoneOne" animated="false" prefWidth="268.0" text="Initial Triumph!">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                             <children>
+                                                <CheckBox fx:id="cbMilestoneOne" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Complete your first exercise.">
+                                                   <font>
+                                                      <Font name="BebasNeueBold" size="20.0" />
+                                                   </font></CheckBox>
+                                             </children></AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="BebasNeueBold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane fx:id="milestoneTwo" animated="false" layoutX="10.0" layoutY="10.0" prefWidth="268.0" text="Pentathlon Pioneer!">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                             <children>
+                                                <CheckBox fx:id="cbMilestoneTwo" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Complete your first 5 exercises.">
+                                                   <font>
+                                                      <Font name="BebasNeueBold" size="19.0" />
+                                                   </font></CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="BebasNeueBold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane fx:id="milestoneThree" animated="false" layoutX="10.0" layoutY="10.0" prefWidth="268.0" styleClass="gradient" stylesheets="@backgroundDesign.css" text="Centennial Lift Club!">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                             <children>
+                                                <CheckBox fx:id="cbMilestoneThree" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Achieve a total of 100 kg in&#10;total weight lifted.">
+                                                   <font>
+                                                      <Font name="BebasNeueBold" size="21.0" />
+                                                   </font></CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="BebasNeueBold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane fx:id="milestoneFour" animated="false" layoutX="10.0" layoutY="10.0" prefWidth="268.0" text="Strongman!">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                             <children>
+                                                <CheckBox fx:id="cbMilestoneFour" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Lift 100kg in a single exercise.">
+                                                   <font>
+                                                      <Font name="BebasNeueBold" size="20.0" />
+                                                   </font></CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="BebasNeueBold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                    <TitledPane fx:id="milestoneFive" animated="false" layoutX="10.0" layoutY="10.0" prefWidth="268.0" text="Flexpulse Certified!">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                             <children>
+                                                <CheckBox fx:id="cbMilestoneFive" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Complete 20 workouts.">
+                                                   <font>
+                                                      <Font name="BebasNeueBold" size="24.0" />
+                                                   </font></CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                       <font>
+                                          <Font name="BebasNeueBold" size="18.0" />
+                                       </font>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                              <Button fx:id="setDetailsBtn" layoutX="36.0" layoutY="175.0" mnemonicParsing="false" onAction="#onSetDetails" stylesheets="@buttonDesigns.css" text="SET DETAILS">
+                                 <font>
+                                    <Font name="BebasNeueBold" size="15.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="exercisesBtn" />
+                                    <String fx:value="gradient" />
+                                 </styleClass></Button>
+                              <Label fx:id="nameLabel" layoutX="32.0" layoutY="54.0" text="FLEXPULSE" underline="true">
+                                 <font>
+                                    <Font name="BebasNeueBold" size="39.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutX="123.0" layoutY="114.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="89.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="111.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="171.0" text="Age:">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="215.0" text="Weight:" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="179.0" text="Height:" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                    <Label fx:id="ageLabel" alignment="CENTER" prefHeight="33.0" prefWidth="166.0" text="not set" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                    <Label fx:id="weightLabel" alignment="CENTER" prefHeight="47.0" prefWidth="111.0" text="not set" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                    <Label fx:id="heightLabel" alignment="CENTER" prefHeight="81.0" prefWidth="198.0" text="not set" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="20.0" />
+                                       </font></Label>
+                                 </children>
+                              </GridPane>
+                              <ImageView fitHeight="52.0" fitWidth="68.0" layoutX="271.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@logos/dumbbell.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="exercisesTab" text="">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TabPane prefHeight="568.0" prefWidth="341.0" tabClosingPolicy="UNAVAILABLE">
+                                 <tabs>
+                                    <Tab fx:id="chestTab" text="CHEST">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                             <children>
+                                                <ScrollPane prefHeight="541.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="341.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                                         <children>
+                                                            <Accordion prefHeight="526.0" prefWidth="340.0">
+                                                               <panes>
+                                                                  <TitledPane fx:id="benchPane" animated="false" text="BENCH PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/bench%20press.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="43.0" layoutY="215.0" text="BENCH PRESS">
+                                                                                 <font>
+                                                                                    <Font name="BebasNeueBold" size="19.0" />
+                                                                                 </font></Label>
+                                                                              <Label layoutX="165.0" layoutY="8.0" prefHeight="136.0" prefWidth="159.0" text="Bench press is a compound&#10;exercise that targets&#10;the chest,  shoulders,&#10;and triceps, promoting&#10;upper body strength&#10;and muscle development.">
+                                                                                 <font>
+                                                                                    <Font name="BebasNeueBold" size="16.0" />
+                                                                                 </font></Label>
+                                                                              <Button fx:id="recordBenchPress" layoutX="245.0" layoutY="196.0" mnemonicParsing="false" onAction="#onBenchPress" stylesheets="@buttonDesigns.css" text="DONE">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="exercisesBtn" />
+                                                                                 </styleClass>
+                                                                                 <font>
+                                                                                    <Font name="BebasNeueBold" size="20.0" />
+                                                                                 </font></Button>
+                                                                              <TextField fx:id="txtBenchSets" layoutX="269.0" layoutY="157.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtBenchWeight" layoutX="216.0" layoutY="157.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="inclinePane" animated="false" text="INCLINE BENCH PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <AnchorPane layoutX="14.0" layoutY="15.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                                 <children>
+                                                                                    <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                                                                       <image>
+                                                                                          <Image url="@logos/incline%20bench.png" />
+                                                                                       </image>
+                                                                                    </ImageView>
+                                                                                    <Label layoutX="7.0" layoutY="172.0" styleClass="title" text="INCLINE BENCH PRESS" />
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                              <Label layoutX="176.0" layoutY="15.0" prefHeight="121.0" prefWidth="153.0" styleClass="desc" stylesheets="@buttonDesigns.css" text="Incline bench press targets&#10;the upper chest, shoulders,&#10;and triceps, emphasizing&#10;the upper part of the&#10;pectoral muscles." />
+                                                                              <Button fx:id="inclineBtn" layoutX="228.0" layoutY="195.0" mnemonicParsing="false" onAction="#onIncline" stylesheets="@buttonDesigns.css" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="exercisesBtn" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                              <TextField fx:id="txtInclineSets" layoutX="272.0" layoutY="150.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtInclineWeight" layoutX="223.0" layoutY="150.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="pressPane" animated="false" text="CHEST PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="138.0" fitWidth="156.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/chest-press.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="149.0" layoutY="14.0" prefHeight="128.0" prefWidth="166.0" styleClass="desc" text="Chest press primarily targets&#10;the central and lower&#10;pectoral muscles, along&#10;with the anterior deltoids&#10;and triceps." />
+                                                                              <Label layoutX="14.0" layoutY="181.0" prefHeight="14.0" prefWidth="103.0" styleClass="title" text="CHEST PRESS" />
+                                                                              <Button fx:id="pressBtn" layoutX="221.0" layoutY="193.0" mnemonicParsing="false" onAction="#onChestPress" stylesheets="@buttonDesigns.css" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="exercisesBtn" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                              <TextField fx:id="txtPressSets" layoutX="274.0" layoutY="152.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPressWeight" layoutX="221.0" layoutY="152.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="pecPane" animated="false" layoutX="10.0" layoutY="10.0" text="PEC DEC FLY">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <Label layoutX="185.0" layoutY="17.0" prefHeight="137.0" prefWidth="132.0" styleClass="desc" text="Pec dec fly targets the&#10;pectoral muscles and&#10;engages the anterior&#10;deltoids, helping to&#10;enhance chest&#10;development and&#10;shoulder stability." />
+                                                                              <ImageView fitHeight="155.0" fitWidth="181.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/pec%20dec.jpg" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="14.0" layoutY="201.0" styleClass="title" text="PEC DEC FLY" />
+                                                                              <Button fx:id="pecDecBtn" layoutX="218.0" layoutY="212.0" mnemonicParsing="false" onAction="#onPecDec" stylesheets="@buttonDesigns.css" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="exercisesBtn" />
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                              <TextField fx:id="txtPecDecSets" layoutX="268.0" layoutY="172.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPecDecWeight" layoutX="215.0" layoutY="172.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="flyPane" animated="false" layoutX="10.0" layoutY="10.0" text="CABLE FLY">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <Label layoutX="158.0" layoutY="9.0" prefHeight="133.0" prefWidth="155.0" styleClass="desc" text="Cable fly primarily targets&#10;the chest muscles,&#10;emphasizing the pectoralis&#10;major, and also engages&#10;the anterior deltoids and&#10;triceps for overall upper&#10;body development." />
+                                                                              <Label layoutX="20.0" layoutY="187.0" styleClass="title" text="CABLE FLY" />
+                                                                              <ImageView fitHeight="150.0" fitWidth="172.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/cable%20fly.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Button fx:id="cableFlyBtn" layoutX="227.0" layoutY="198.0" mnemonicParsing="false" onAction="#onCableFly" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                              <TextField fx:id="txtFlySets" layoutX="275.0" layoutY="156.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtFlyWeight" layoutX="222.0" layoutY="156.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="crossPane" animated="false" layoutX="10.0" layoutY="10.0" text="CABLE CROSSOVER">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="149.0" fitWidth="187.0" layoutX="7.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/cable%20cross.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="143.0" layoutY="7.0" prefHeight="173.0" prefWidth="179.0" styleClass="desc" text="Cable crossover targets&#10;the chest muscles, particularly&#10;the pectoralis major, aiding&#10;in chest development and&#10;providing a range of&#10;motion for effective&#10;muscle engagement." />
+                                                                              <Label layoutX="14.0" layoutY="190.0" styleClass="title" text="CABLE CROSSOVER" />
+                                                                              <TextField fx:id="txtCrossSets" layoutX="279.0" layoutY="167.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtCrossWeight" layoutX="226.0" layoutY="167.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="crossBtn" layoutX="226.0" layoutY="214.0" mnemonicParsing="false" onAction="#onCableCross" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="dipPane" animated="false" layoutX="10.0" layoutY="10.0" text="CHEST DIP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <Label layoutX="171.0" layoutY="7.0" prefHeight="154.0" prefWidth="148.0" styleClass="desc" text="Chest dip primarily targets&#10;the chest muscles,&#10;specifically the pectoralis&#10;major, as well as the&#10;triceps and deltoids.&#10;It's an effective compound&#10;exercise for overall upper&#10;body strength." />
+                                                                              <Label layoutX="14.0" layoutY="193.0" styleClass="title" text="CHEST DIP">
+                                                                                 <font>
+                                                                                    <Font size="13.0" />
+                                                                                 </font></Label>
+                                                                              <ImageView fitHeight="159.0" fitWidth="167.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/Chest%20Dip.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <TextField fx:id="txtDipSets" layoutX="277.0" layoutY="172.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtDipWeight" layoutX="224.0" layoutY="172.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="chestDiptBtn" layoutX="225.0" layoutY="205.0" mnemonicParsing="false" onAction="#onChestDip" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane fx:id="pushPane" animated="false" layoutX="10.0" layoutY="10.0" text="PUSH UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="166.0" fitWidth="142.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/push%20up.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="179.0" layoutY="8.0" prefHeight="142.0" prefWidth="142.0" styleClass="desc" text="Push-up primarily targets&#10;the chest, shoulders, and&#10;triceps. It also engages&#10;the core muscles, making &#10;t a comprehensive uppe&#10; body and core exercise." />
+                                                                              <Label layoutX="14.0" layoutY="179.0" styleClass="title" text="PUSH UP" />
+                                                                              <TextField fx:id="txtPushSets" layoutX="269.0" layoutY="166.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPushWeight" layoutX="216.0" layoutY="166.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="pushUpBtn" layoutX="217.0" layoutY="203.0" mnemonicParsing="false" onAction="#onPushUp" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="15.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="backTab" text="BACK">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="542.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="341.0" styleClass="gradient">
+                                                         <children>
+                                                            <Accordion prefHeight="530.0" prefWidth="348.0">
+                                                               <panes>
+                                                                  <TitledPane animated="false" text="LAT PULLDOWN">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="191.0" fitWidth="164.0" layoutX="39.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/lat%20pulldown.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="175.0" layoutY="3.0" prefHeight="165.0" prefWidth="125.0" styleClass="desc" text="Lat pulldown targets&#10;the latissimus dorsi,&#10;which is the broad&#10;muscle of the back.&#10;It also engages the&#10;biceps, rhomboids,&#10;and rear deltoids.&#10;&#10;&#10;&#10;&#10;&#10;" />
+                                                                              <Label layoutX="25.0" layoutY="238.0" styleClass="title" text="LAT PULLDOWN" />
+                                                                              <TextField fx:id="txtLatPullSets" layoutX="262.0" layoutY="186.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtLatPullWeight" layoutX="209.0" layoutY="186.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="latPulldownBtn" layoutX="225.0" layoutY="250.0" mnemonicParsing="false" onAction="#onLatPulldown" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="DUMBBELL ROW">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="191.0" fitWidth="164.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/dumbbell%20row.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="179.0" layoutY="2.0" prefHeight="190.0" prefWidth="142.0" styleClass="desc" text="Dumbbell rows primarily&#10;target the muscles of the&#10;upper back, including&#10;the latissimus dorsi and&#10;rhomboids. This exercise&#10;also engages the biceps&#10;and traps.&#10;&#10;&#10;&#10;&#10;&#10;" />
+                                                                              <Label layoutX="25.0" layoutY="238.0" styleClass="title" text="DUMBBELL ROW" />
+                                                                              <TextField fx:id="txtDumbbellSets" layoutX="269.0" layoutY="202.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtDumbbellWeight" layoutX="216.0" layoutY="202.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="dumbbellRowBtn" layoutX="216.0" layoutY="249.0" mnemonicParsing="false" onAction="#onDumbbellRow" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="SEATED ROW">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="164.0" fitWidth="148.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/seated%20row.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="172.0" layoutY="2.0" prefHeight="194.0" prefWidth="149.0" styleClass="desc" text="Seated rows target the&#10;muscles of the upper&#10;back, including the &#10;atissimus dorsi, rhomboids,&#10;and traps. This exercise&#10;also engages the biceps&#10;and rear deltoids." />
+                                                                              <Label layoutX="25.0" layoutY="238.0" styleClass="title" text="SEATED ROW" />
+                                                                              <TextField fx:id="txtSeatedSets" layoutX="277.0" layoutY="208.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtSeatedWeight" layoutX="224.0" layoutY="208.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="seatedRowBtn" layoutX="228.0" layoutY="249.0" mnemonicParsing="false" onAction="#onSeatedRow" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="PULL UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="158.0" fitWidth="154.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/pull-up.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="171.0" layoutY="2.0" prefHeight="181.0" prefWidth="150.0" styleClass="desc" text="Pull-ups target the upper&#10;back, lats, biceps, and&#10;forearms. This bodyweight&#10;exercise is effective for&#10;building upper body&#10;strength and improving&#10;grip." />
+                                                                              <Label layoutX="25.0" layoutY="238.0" styleClass="title" text="PULL UP" />
+                                                                              <TextField fx:id="txtPullSets" layoutX="265.0" layoutY="195.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPullWeight" layoutX="212.0" layoutY="195.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="pullUpBtn" layoutX="213.0" layoutY="243.0" mnemonicParsing="false" onAction="#onPullUp" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="DEADLIFT">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="191.0" fitWidth="164.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/deadlift.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="172.0" layoutY="2.0" prefHeight="172.0" prefWidth="149.0" styleClass="desc" text="Deadlift targets the lower&#10;back, glutes, hamstrings,&#10;and core muscles. It is a&#10;compound exercise that&#10;improves overall strength&#10;and engages multiple&#10;muscle groups.&#10;&#10;&#10;&#10;&#10;&#10;" />
+                                                                              <Label layoutX="25.0" layoutY="238.0" styleClass="title" text="DEADLIFT" />
+                                                                              <TextField fx:id="txtDeadliftSets" layoutX="279.0" layoutY="176.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtDeadliftWeight" layoutX="226.0" layoutY="176.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="deadliftBtn" layoutX="226.0" layoutY="225.0" mnemonicParsing="false" onAction="#onDeadlift" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="CABLE ROW">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="151.0" fitWidth="177.0" layoutX="8.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/shotgun-row.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="193.0" layoutY="14.0" prefHeight="158.0" prefWidth="136.0" styleClass="desc" text="Cable single-arm row&#10;targets the latissimus&#10;dorsi, rhomboids, and&#10;biceps. It helps improve&#10;upper back and arm&#10;strength, as well as&#10;posture." />
+                                                                              <Label layoutX="38.0" layoutY="220.0" styleClass="title" text="CABLE ROW" />
+                                                                              <TextField fx:id="txtCableRowSets" layoutX="272.0" layoutY="207.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtCableRowWeight" layoutX="219.0" layoutY="207.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="CableRowBtn" layoutX="223.0" layoutY="256.0" mnemonicParsing="false" onAction="#onCableRow" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="armsTab" text="ARMS">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="542.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="536.0" prefWidth="341.0" styleClass="gradient">
+                                                         <children>
+                                                            <Accordion prefHeight="534.0" prefWidth="347.0">
+                                                               <panes>
+                                                                  <TitledPane animated="false" text="BICEP CURL">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="150.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/bicep-curl.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="156.0" layoutY="65.0" prefHeight="95.0" prefWidth="154.0" styleClass="desc" text="Bicep curl primarily targets&#10;the biceps brachii, which is&#10;the muscle located on the&#10;front of the upper arm." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="BICEP CURL" />
+                                                                              <TextField fx:id="txtBicepSets" layoutX="254.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtBicepWeight" layoutX="201.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="bicepCurlBtn" layoutX="224.0" layoutY="257.0" mnemonicParsing="false" onAction="#onBicepCurl" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="INCLINE BICEP CURL">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="169.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/incline%20bicep.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="196.0" layoutY="19.0" prefHeight="194.0" prefWidth="133.0" styleClass="desc" text="Incline bicep curl&#10;targets the biceps&#10;brachii and ,emphasizes&#10;the upper part of the&#10;biceps. The incline&#10;position increases the&#10;range of motion and&#10;works the muscle from&#10;a different angle." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="INCLINE BICEP CURL" />
+                                                                              <TextField fx:id="txtInclineBicepSets" layoutX="263.0" layoutY="233.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtInclineBicepWeight" layoutX="210.0" layoutY="233.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="inclineBicepBtn" layoutX="218.0" layoutY="270.0" mnemonicParsing="false" onAction="#onCableCross" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="TRICEP PUSHDOWN">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="169.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/pushdown.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="165.0" layoutY="18.0" prefHeight="147.0" prefWidth="152.0" styleClass="desc" text="Tricep pushdown primarily&#10;targets the triceps brachii&#10;muscles, helping to&#10;strengthen and tone the&#10;back of the arms." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="TRICEP PUSHDOWN" />
+                                                                              <TextField fx:id="txtPushdownSets" layoutX="260.0" layoutY="192.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPushdownWeight" layoutX="207.0" layoutY="192.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="pushdownBtn" layoutX="215.0" layoutY="239.0" mnemonicParsing="false" onAction="#onPushdown" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="TRICEP KICKBACK">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="169.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/kickback.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="174.0" layoutY="19.0" prefHeight="159.0" prefWidth="144.0" styleClass="desc" text="Tricep kickback is an&#10;isolation exercise that&#10;targets the triceps. It&#10;involves extending the&#10;arm backward against&#10;resistance, working the&#10;triceps muscles." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="TRICEP KICKBACK" />
+                                                                              <TextField fx:id="txtKickbackSets" layoutX="260.0" layoutY="204.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtKickbackWeight" layoutX="207.0" layoutY="204.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="kickbackBtn" layoutX="208.0" layoutY="251.0" mnemonicParsing="false" onAction="#onKickBack" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="TRICEP DIPS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="169.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/dips.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="188.0" layoutY="18.0" prefHeight="173.0" prefWidth="129.0" styleClass="desc" text="Tricep dips are a&#10;bodyweight exercise&#10;that targets the triceps,&#10;deltoids, and pectoral&#10;muscles. It involves&#10;lowering and raising&#10;the body using a chair." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="TRICEP DIPS" />
+                                                                              <TextField fx:id="txttricepSets" layoutX="260.0" layoutY="204.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtTricepWeight" layoutX="207.0" layoutY="204.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="tricepDipsBtn" layoutX="232.0" layoutY="239.0" mnemonicParsing="false" onAction="#onTricepDips" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="BAND BICEP CURL">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="167.0" fitWidth="169.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/band%20bicep.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="175.0" layoutY="18.0" prefHeight="204.0" prefWidth="142.0" styleClass="desc" text="Band bicep curl is a&#10;resistance band exercise&#10;that targets the biceps.&#10;It involves curling the&#10;band upward against&#10;resistance to strengthen&#10;and tone the bicep&#10;muscles." />
+                                                                              <Label layoutX="23.0" layoutY="246.0" styleClass="title" text="BAND BICEP CURL" />
+                                                                              <TextField fx:id="txtBandSets" layoutX="254.0" layoutY="216.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtBandWeight" layoutX="201.0" layoutY="216.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="bandBtn" layoutX="209.0" layoutY="258.0" mnemonicParsing="false" onAction="#onBand" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="shouldersTab" text="SHOULDERS">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="539.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="540.0" prefWidth="341.0" styleClass="gradient">
+                                                         <children>
+                                                            <Accordion prefHeight="535.0" prefWidth="346.0">
+                                                               <panes>
+                                                                  <TitledPane animated="false" text="SHOULDER PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="183.0" fitWidth="163.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/shoulder%20press.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="163.0" layoutY="11.0" prefHeight="182.0" prefWidth="158.0" styleClass="desc" text="Shoulder press is a strength&#10;training exercise that targets&#10;the deltoid muscles of the&#10;shoulders. It involves lifting&#10;weights overhead from&#10;shoulder height to fully&#10;extended arms." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="SHOULDER PRESS" />
+                                                                              <TextField fx:id="txtShoulderSets" layoutX="263.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtShoulderWeight" layoutX="210.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="shoulderPressBtn" layoutX="217.0" layoutY="247.0" mnemonicParsing="false" onAction="#onShoulderPress" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="LATERAL RAISE">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="160.0" fitWidth="151.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/lateral.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="171.0" layoutY="14.0" prefHeight="175.0" prefWidth="158.0" styleClass="desc" text="Lateral raise is a shoulder&#10;exercise that involves lifting&#10;weights outward from the&#10;sides, targeting the lateral&#10;or side deltoids for shoulder&#10;development." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="LATERAL RAISE" />
+                                                                              <TextField fx:id="txtLateralSets" layoutX="258.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtLateralWeight" layoutX="205.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="lateralRaiseBtn" layoutX="213.0" layoutY="248.0" mnemonicParsing="false" onAction="#onLateralRasei" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="LANDMINE PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="163.0" fitWidth="152.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/landmine%20press.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="185.0" layoutY="11.0" prefHeight="187.0" prefWidth="136.0" styleClass="desc" text="Landmine press is a&#10;compound exercise&#10;where a barbell is&#10;anchored at one end,&#10;and the opposite end&#10;is pressed or pushed&#10;upward, working the&#10;shoulders and triceps&#10;while engaging the&#10;core for stability." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="LANDMINE PRESS" />
+                                                                              <TextField fx:id="txtLandmineSets" layoutX="261.0" layoutY="211.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtLandmineWeight" layoutX="208.0" layoutY="211.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="landmineBtn" layoutX="199.0" layoutY="256.0" mnemonicParsing="false" onAction="#onLandmine" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="MILITARY PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="157.0" fitWidth="132.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/Military.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="155.0" layoutY="11.0" prefHeight="173.0" prefWidth="166.0" styleClass="desc" text="Military press, is a compound&#10;strength training exercise.&#10;It targets the deltoid muscles&#10;of the shoulders and helps&#10;build upper body strength.&#10;The lifter presses dumbbells&#10;from shoulder height to&#10;an overhead position." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="MILIITARY PRESS" />
+                                                                              <TextField fx:id="txtMilitarySets" layoutX="248.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtMilitaryWeight" layoutX="195.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="militaryBtn" layoutX="199.0" layoutY="248.0" mnemonicParsing="false" onAction="#onMilitary" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="EXTERNAL ROTATIONS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="149.0" fitWidth="123.0" layoutX="14.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/external.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="148.0" layoutY="11.0" prefHeight="187.0" prefWidth="173.0" styleClass="desc" text="External rotation is a shoulder&#10; exercise that targets the&#10;rotator cuff muscles. It&#10;involves rotating the shoulder&#10;outward against resistance,&#10;helping to strengthen and&#10;stabilize the muscles&#10;responsible for external&#10;rotation." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="EXTERNAL ROTATIONS" />
+                                                                              <TextField fx:id="txtExternalSets" layoutX="247.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtEnteralWeight" layoutX="194.0" layoutY="203.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="externalBtn" layoutX="198.0" layoutY="260.0" mnemonicParsing="false" onAction="#onMilitary" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="PLATE ROTATION">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="163.0" fitWidth="148.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/plate%20rotation.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="185.0" layoutY="11.0" prefHeight="230.0" prefWidth="136.0" styleClass="desc" text="Plate rotation, is a&#10;shoulder and core&#10;exercise. It involves&#10;holding a weight plate&#10;with both hands and&#10;rotating the torso from&#10;side to side, engaging&#10;the abdominal muscles&#10;and obliques. This&#10;exercise helps improve&#10;shoulder endurance&#10;and stability." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="PLATE ROTATION" />
+                                                                              <TextField fx:id="txtPlateSets" layoutX="180.0" layoutY="265.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPlateWeight" layoutX="127.0" layoutY="265.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="plateBtn" layoutX="235.0" layoutY="259.0" mnemonicParsing="false" onAction="#onPlate" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="legsTab" text="LEGS">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="541.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="351.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                                         <children>
+                                                            <Accordion prefHeight="533.0" prefWidth="331.0">
+                                                               <panes>
+                                                                  <TitledPane animated="false" text="BARBELL SQUAT">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="183.0" fitWidth="148.0" layoutX="14.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/barbell%20sq.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="170.0" prefHeight="174.0" prefWidth="149.0" styleClass="desc" text="The barbell squat&#10;targets the lower&#10;body, working the&#10;quadriceps, hamstrings,&#10;and glutes. It's a&#10;compound exercise&#10;that enhances overall&#10;lower body strength&#10;and muscle development." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="BARBELL SQUAT" />
+                                                                              <TextField fx:id="txtBarbellSets" layoutX="259.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtBarbellWeight" layoutX="206.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="barbellBtn" layoutX="207.0" layoutY="229.0" mnemonicParsing="false" onAction="#onBarbell" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="LEG PRESS">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="171.0" fitWidth="156.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/leg%20press.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="179.0" layoutY="11.0" prefHeight="161.0" prefWidth="142.0" styleClass="desc" text="The leg press primarily&#10;targets the quadriceps,&#10;hamstrings, and glutes.&#10;It's a compound exercise&#10;performed on a leg press&#10;machine, promoting lower&#10;body strength and muscle&#10;development." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="LEG PRESS" />
+                                                                              <TextField fx:id="txtLegPressSets" layoutX="258.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtLegPressWeight" layoutX="205.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="legPressBtn" layoutX="213.0" layoutY="236.0" mnemonicParsing="false" onAction="#onLegPress" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="LEG EXTENSION">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="158.0" fitWidth="149.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/leg%20extension.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="164.0" layoutY="11.0" prefHeight="169.0" prefWidth="157.0" styleClass="desc" text="Leg extension isolates&#10;the quadriceps muscles.&#10;It involves extending&#10;the knee against resistance,&#10;typically using a leg&#10;extension machine. This&#10;exercise helps strengthen&#10;and define the front thigh&#10;muscles." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="LEG EXTENSION" />
+                                                                              <TextField fx:id="txtExtensionsets" layoutX="268.0" layoutY="188.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtExtensionWeight" layoutX="215.0" layoutY="188.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="extensionBtn" layoutX="216.0" layoutY="233.0" mnemonicParsing="false" onAction="#onExtension" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="HAMSTRING CURL">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="159.0" fitWidth="148.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/hamstring%20curl.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="169.0" layoutY="14.0" prefHeight="187.0" prefWidth="148.0" styleClass="desc" text="Hamstring curl targets&#10;the muscles at the back&#10;of the thigh. It involves&#10;flexing the knee against&#10;resistance, often using&#10;a machine. This exercise&#10;is effective for developing&#10;hamstring strength and&#10;stability." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="HAMSTRING CURL" />
+                                                                              <TextField fx:id="txtHamstringSets" layoutX="262.0" layoutY="201.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtHamstringWeight" layoutX="209.0" layoutY="201.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="hamstringBtn" layoutX="209.0" layoutY="241.0" mnemonicParsing="false" onAction="#onMilitary" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="HIP THRUST">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="158.0" fitWidth="151.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/hip%20thrust.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="169.0" layoutY="11.0" prefHeight="176.0" prefWidth="152.0" styleClass="desc" text="Hip thrust is a lower-body&#10;exercise that targets the&#10;glutes, hamstrings, and&#10;core. It involves lifting the&#10;hips off the ground while&#10;seated, promoting strength&#10;and activation in the&#10;posterior chain." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="HIP THRUST" />
+                                                                              <TextField fx:id="txtHipSets" layoutX="258.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtHipWeight" layoutX="205.0" layoutY="194.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="hipBtn" layoutX="208.0" layoutY="233.0" mnemonicParsing="false" onAction="#onHip" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="135.0" text="MEDICINE BALL SQUAT">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="158.0" fitWidth="151.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/medicine%20ball%20sq.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="160.0" layoutY="11.0" prefHeight="182.0" prefWidth="161.0" styleClass="desc" text="Medicine ball squat is a&#10;compound exercise that&#10;combines squats with a&#10;medicine ball. It targets&#10;the lower body muscles,&#10;including quads, hamstrings,&#10;and glutes, while also&#10;engaging the core for&#10;stability and balance." />
+                                                                              <Label layoutX="23.0" layoutY="237.0" styleClass="title" text="MEDICINE BALL SQUAT" />
+                                                                              <TextField fx:id="txtMedicineSets" layoutX="248.0" layoutY="211.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtMedicineWeight" layoutX="195.0" layoutY="211.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="medicineBtn" layoutX="207.0" layoutY="249.0" mnemonicParsing="false" onAction="#onMedicine" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="PISTOL SQUAT">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                                           <children>
+                                                                              <ImageView fitHeight="164.0" fitWidth="152.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/pistol.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="170.0" layoutY="11.0" prefHeight="173.0" prefWidth="151.0" text="Pistol squat is a challenging&#10;single-leg exercise that&#10;targets the quadriceps,&#10;hamstrings, glutes, and&#10;core. It involves lowering&#10;and raising the body on&#10;one leg, enhancing&#10;balance and strength." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" text="PISTOL SQUAT" />
+                                                                              <TextField fx:id="txtPistolSets" layoutX="253.0" layoutY="184.0" prefHeight="25.0" prefWidth="38.0" promptText="sets" />
+                                                                              <TextField fx:id="txtPistolWeight" layoutX="200.0" layoutY="184.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                              <Button fx:id="pistolBtn" layoutX="225.0" layoutY="219.0" mnemonicParsing="false" onAction="#onPistol" text="RECORD" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                    <Tab fx:id="coreTab" text="CORE">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane prefHeight="540.0" prefWidth="341.0">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="539.0" prefWidth="341.0" styleClass="gradient" stylesheets="@backgroundDesign.css">
+                                                         <children>
+                                                            <Accordion prefHeight="536.0" prefWidth="347.0">
+                                                               <panes>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="PLANK">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="144.0" fitWidth="142.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/plank.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="163.0" layoutY="11.0" prefHeight="204.0" prefWidth="158.0" styleClass="desc" text="The plank is a fundamental&#10;core exercise where one&#10;maintains a push-up position&#10;with the body in a straight&#10;line. It targets the core&#10;muscles, promoting&#10;stability and endurance.&#10;Variations exist, such as&#10;side planks, to engage&#10;different muscle groups." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="PLANK" />
+                                                                              <TextField fx:id="txtPlankSec" layoutX="154.0" layoutY="242.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="plankBtn" layoutX="218.0" layoutY="236.0" mnemonicParsing="false" onAction="#onPlank" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="SIDE PLANK">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="148.0" fitWidth="137.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/side%20plank.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="155.0" layoutY="11.0" prefHeight="186.0" prefWidth="166.0" styleClass="desc" text="The side plank is a core&#10;exercise where one supports&#10;their body sideways on one&#10;forearm and the side of the&#10;foot, forming a straight line.&#10;It targets the obliques and&#10;improves core stability." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="SIDE PLANK" />
+                                                                              <TextField fx:id="txtSideSec" layoutX="189.0" layoutY="212.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="sideBtn" layoutX="238.0" layoutY="212.0" mnemonicParsing="false" onAction="#onSide" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="REVERSE PLANK">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="152.0" fitWidth="142.0" layoutX="14.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/reverse%20plank.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="163.0" layoutY="11.0" prefHeight="204.0" prefWidth="158.0" styleClass="desc" text="The reverse plank is a core&#10;exercise where one supports&#10;their body in a reverse&#10;tabletop position, facing&#10;upward. It engages the&#10;core, glutes, and shoulders,&#10;enhancing posterior chain&#10;strength and stability." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="REVERSE PLANK" />
+                                                                              <TextField fx:id="txtReverseSex" layoutX="197.0" layoutY="230.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="reverseBtn" layoutX="246.0" layoutY="230.0" mnemonicParsing="false" onAction="#onReverse" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="WEIGHTED SIT UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="154.0" fitWidth="137.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/weighted%20sit%20ups.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="167.0" layoutY="11.0" prefHeight="204.0" prefWidth="154.0" styleClass="desc" text="Weighted sit-ups involve&#10;holding a weight against&#10;the chest while performing&#10;a sit-up, adding resistance&#10;to engage and strengthen&#10;the abdominal muscles." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="WEIGHTED SIT UP" />
+                                                                              <TextField fx:id="txtWeightSec" layoutX="225.0" layoutY="191.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="weightedBtn" layoutX="226.0" layoutY="229.0" mnemonicParsing="false" onAction="#onWeighted" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="title" />
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                 </styleClass></Button>
+                                                                              <TextField fx:id="txtWeightedWeight" layoutX="270.0" layoutY="191.0" prefHeight="25.0" prefWidth="38.0" promptText="kg" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="DECLINE SIT UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="145.0" fitWidth="123.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/decline%20sit%20ups.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="153.0" layoutY="11.0" prefHeight="191.0" prefWidth="168.0" styleClass="desc" text="Decline sit-ups are performed&#10;on a decline bench, with the&#10;lower body positioned lower&#10;than the upper body. This&#10;variation intensifies&#10;abdominal muscle&#10;engagement during the&#10;sit-up movement." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="DECLINE SIT UP" />
+                                                                              <TextField fx:id="txtDecilneSecs" layoutX="197.0" layoutY="230.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="declineBtn" layoutX="246.0" layoutY="230.0" mnemonicParsing="false" onAction="#onDecline" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" layoutX="10.0" layoutY="135.0" text="SIT UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="159.0" fitWidth="142.0" layoutX="14.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/sit-up.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="156.0" layoutY="11.0" prefHeight="204.0" prefWidth="160.0" styleClass="desc" text="Sit-ups are a classic core&#10;exercise that involves lying&#10;on your back, bending your&#10;knees, and lifting your upper&#10;body toward your knees.&#10;They primarily target the&#10;abdominal muscles." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="SIT UP" />
+                                                                              <TextField fx:id="txtSitSec" layoutX="197.0" layoutY="230.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="situpBtn" layoutX="246.0" layoutY="230.0" mnemonicParsing="false" onAction="#onSitUp" text="RECORD">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="buttons" />
+                                                                                    <String fx:value="gradient" />
+                                                                                    <String fx:value="title" />
+                                                                                 </styleClass></Button>
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                                  <TitledPane animated="false" text="HANGING SIT UP">
+                                                                     <content>
+                                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="gradient">
+                                                                           <children>
+                                                                              <ImageView fitHeight="161.0" fitWidth="142.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                                                                                 <image>
+                                                                                    <Image url="@logos/hanging.png" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <Label layoutX="185.0" layoutY="11.0" prefHeight="230.0" prefWidth="136.0" styleClass="desc" text="Hanging sit-ups are an&#10;advanced abdominal&#10;exercise performed&#10;hanging from a bar. They&#10;target the rectus&#10;abdominis and engage&#10;the entire core, enhancing&#10;strength and stability.&#10;Care must be taken to&#10;ensure proper form and&#10;minimize strain on the&#10;lower back." />
+                                                                              <Label layoutX="22.0" layoutY="224.0" styleClass="title" text="HANGING SIT UP" />
+                                                                              <TextField fx:id="txtHangingSec" layoutX="173.0" layoutY="251.0" prefHeight="25.0" prefWidth="38.0" promptText="secs" />
+                                                                              <Button fx:id="hangingBtn" layoutX="222.0" layoutY="251.0" mnemonicParsing="false" onAction="#onHanging" text="RECORD" />
+                                                                           </children>
+                                                                        </AnchorPane>
+                                                                     </content>
+                                                                     <font>
+                                                                        <Font name="BebasNeueBold" size="16.0" />
+                                                                     </font>
+                                                                  </TitledPane>
+                                                               </panes>
+                                                            </Accordion>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </Tab>
+                                 </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="blankTab" text="FLEXPULSE">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+                  <Tab fx:id="recordsTab" text="">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="571.0" prefWidth="384.0">
+                           <children>
+                              <Button fx:id="deleteBtn" layoutX="24.0" layoutY="532.0" mnemonicParsing="false" onAction="#onDelete" stylesheets="@buttonDesigns.css" text="DELETE">
+                                 <styleClass>
+                                    <String fx:value="exercisesBtn" />
+                                    <String fx:value="gradient" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="BebasNeueBold" size="16.0" />
+                                 </font></Button>
+                              <ScrollPane prefHeight="522.0" prefWidth="340.0">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="519.0" prefWidth="414.0">
+                                       <children>
+                                          <TableView fx:id="workoutsTable" prefHeight="518.0" prefWidth="415.0">
+                                             <columns>
+                                                <TableColumn fx:id="exerciseCol" editable="false" prefWidth="70.0" text="EXERCISE" />
+                                                <TableColumn fx:id="setsCol" editable="false" prefWidth="74.0" text="SETS" />
+                                                <TableColumn fx:id="weightCol" editable="false" prefWidth="73.0" text="WEIGHT" />
+                                                <TableColumn fx:id="totalCol" editable="false" prefWidth="74.0" text="TOTAL" />
+                                                <TableColumn fx:id="intensityCol" editable="false" minWidth="0.0" prefWidth="123.0" text="INTENSITY" />
+                                             </columns>
+                                             <styleClass>
+                                                <String fx:value="buttons" />
+                                                <String fx:value="gradient" />
+                                             </styleClass>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </ScrollPane>
+                              <Button fx:id="refreshBtn" layoutX="252.0" layoutY="532.0" mnemonicParsing="false" onAction="#onRefresh" stylesheets="@buttonDesigns.css" text="REFRESH">
+                                 <styleClass>
+                                    <String fx:value="gradient" />
+                                    <String fx:value="exercisesBtn" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="BebasNeueBold" size="16.0" />
+                                 </font></Button>
+                              <Label fx:id="grandTotalLabel" layoutX="113.0" layoutY="523.0" text="TOTAL WEIGHT LIFTED:&#10;0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="BebasNeueBold" size="17.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                  <Tab fx:id="coachTab" text="">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="526.0" prefWidth="340.0">
+                           <children>
+                              <AnchorPane layoutY="92.0" prefHeight="479.0" prefWidth="340.0">
+                                 <children>
+                                    <TextField fx:id="txtWeight" layoutX="68.0" layoutY="14.0" prefHeight="25.0" prefWidth="46.0" promptText="kg" />
+                                    <TextField fx:id="txtHeight" layoutX="68.0" layoutY="53.0" prefHeight="25.0" prefWidth="46.0" promptText="cm" />
+                                    <TextField fx:id="txtGoal" layoutX="72.0" layoutY="106.0" promptText="e.g: Build Muscle" />
+                                    <Label layoutX="28.0" layoutY="14.0" text="Weight: ">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="15.0" />
+                                       </font></Label>
+                                    <Label layoutX="28.0" layoutY="53.0" text="Height: ">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="15.0" />
+                                       </font></Label>
+                                    <Label layoutX="40.0" layoutY="109.0" text="GOAL:">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="15.0" />
+                                       </font></Label>
+                                    <ScrollPane layoutX="6.0" layoutY="164.0" prefHeight="279.0" prefWidth="324.0">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="260.0" prefWidth="430.0">
+                                             <children>
+                                                <TextArea fx:id="textAreaAI" editable="false" layoutX="-1.0" layoutY="-4.0" prefHeight="277.0" prefWidth="421.0" promptText="AI SUGGESTION" />
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </ScrollPane>
+                                    <Button fx:id="submitBtn" layoutX="247.0" layoutY="106.0" mnemonicParsing="false" onAction="#onSubmit" stylesheets="@buttonDesigns.css" text="SUBMIT">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="16.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="exercisesBtn" />
+                                          <String fx:value="gradient" />
+                                       </styleClass></Button>
+                                    <ComboBox fx:id="cmbAskfor" layoutX="183.0" layoutY="53.0" prefHeight="17.0" prefWidth="122.0" promptText="Ask for" visibleRowCount="3" />
+                                    <RadioButton fx:id="rbMale" layoutX="183.0" layoutY="10.0" mnemonicParsing="false" onAction="#onMale" text="Male">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="15.0" />
+                                       </font></RadioButton>
+                                    <RadioButton fx:id="rbFemale" layoutX="244.0" layoutY="10.0" mnemonicParsing="false" onAction="#onFemale" text="Female">
+                                       <font>
+                                          <Font name="BebasNeueBold" size="15.0" />
+                                       </font></RadioButton>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="91.0" layoutY="14.0" prefHeight="62.0" prefWidth="86.0" text="AI COACH" textAlignment="CENTER" underline="true" wrapText="true">
+                                 <font>
+                                    <Font name="BebasNeueBold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="77.0" fitWidth="66.0" layoutX="183.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@logos/chatbot.png" />
+                                 </image>
+                              </ImageView>
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
